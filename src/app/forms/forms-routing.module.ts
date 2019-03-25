@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ValidationFormsComponent } from "./validation/validation-forms.component";
-import { WizardFormsComponent } from "./wizard/wizard-forms.component";
+import { ValidationFormsComponent } from './validation/validation-forms.component';
+import { WizardFormsComponent } from './wizard/wizard-forms.component';
 import { BasicComponent } from './layouts/basic/basic.component';
 import { HorizontalComponent } from './layouts/horizontal/horizontal.component';
 import { HiddenLabelsComponent } from './layouts/hidden-labels/hidden-labels.component';
@@ -15,7 +15,7 @@ import { InputGridComponent } from './elements/input-grid/input-grid.component';
 
 const routes: Routes = [
   {
-    path: '',    
+    path: '',
     children: [
       {
         path: 'basic',
@@ -86,7 +86,7 @@ const routes: Routes = [
         data: {
           title: 'Validation Forms'
         }
-      }, 
+      },
       {
         path: 'wizard',
         component: WizardFormsComponent,
@@ -97,7 +97,7 @@ const routes: Routes = [
       {
         path: 'ngx',
         loadChildren: './ngx-wizard/ngx-wizard.module#NGXFormWizardModule'
-      }      
+      }
     ]
   }
 ];
