@@ -1,14 +1,14 @@
-//line chart
+// line chart
 
-export var lineChartData: Array<any> = [
+export let lineChartData: Array<any> = [
 
   { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' },
   { data: [28, 48, 40, 19, 86, 27, 90], label: 'My Second dataset' },
   { data: [45, 25, 16, 36, 67, 18, 76], label: 'My Third dataset - No bezier' }
 
 ];
-export var lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-export var lineChartOptions: any = {
+export let lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+export let lineChartOptions: any = {
   animation: {
     duration: 1000, // general animation time
     easing: 'easeOutBack'
@@ -27,7 +27,7 @@ export var lineChartOptions: any = {
     xAxes: [{
       display: true,
       gridLines: {
-        color: "#f3f3f3",
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -38,7 +38,7 @@ export var lineChartOptions: any = {
     yAxes: [{
       display: true,
       gridLines: {
-        color: "#f3f3f3",
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -52,15 +52,15 @@ export var lineChartOptions: any = {
     text: 'Chart.js Line Chart - Legend'
   }
 };
-export var lineChartColors: Array<any> = [
+export let lineChartColors: Array<any> = [
 
   {
 
     fill: false,
     borderDash: [5, 5],
-    borderColor: "#9C27B0",
-    pointBorderColor: "#9C27B0",
-    pointBackgroundColor: "#FFF",
+    borderColor: '#9C27B0',
+    pointBorderColor: '#9C27B0',
+    pointBackgroundColor: '#FFF',
     pointBorderWidth: 2,
     pointHoverBorderWidth: 2,
     pointRadius: 4,
@@ -69,9 +69,9 @@ export var lineChartColors: Array<any> = [
 
     fill: false,
     borderDash: [5, 5],
-    borderColor: "#00A5A8",
-    pointBorderColor: "#00A5A8",
-    pointBackgroundColor: "#FFF",
+    borderColor: '#00A5A8',
+    pointBorderColor: '#00A5A8',
+    pointBackgroundColor: '#FFF',
     pointBorderWidth: 2,
     pointHoverBorderWidth: 2,
     pointRadius: 4,
@@ -79,28 +79,28 @@ export var lineChartColors: Array<any> = [
   {
     lineTension: 0,
     fill: false,
-    borderColor: "#FF7D4D",
-    pointBorderColor: "#FF7D4D",
-    pointBackgroundColor: "#FFF",
+    borderColor: '#FF7D4D',
+    pointBorderColor: '#FF7D4D',
+    pointBackgroundColor: '#FFF',
     pointBorderWidth: 2,
     pointHoverBorderWidth: 2,
     pointRadius: 4,
   },
 
 ];
-export var lineChartLegend = true;
-export var lineChartType = 'line';
+export let lineChartLegend = true;
+export let lineChartType = 'line';
 
 
-//area chart
-export var areaChartData: Array<any> = [
+// area chart
+export let areaChartData: Array<any> = [
 
   { data: [0, 150, 140, 105, 190, 230, 270], label: 'Series A' },
   { data: [0, 90, 120, 240, 140, 250, 190], label: 'Series B' }
 
 ];
-export var areaChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-export var areaChartOptions: any = {
+export let areaChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+export let areaChartOptions: any = {
   animation: {
     duration: 1000, // general animation time
     easing: 'easeOutBack'
@@ -115,7 +115,7 @@ export var areaChartOptions: any = {
     xAxes: [{
       display: true,
       gridLines: {
-        color: "#f3f3f3",
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -126,7 +126,7 @@ export var areaChartOptions: any = {
     yAxes: [{
       display: true,
       gridLines: {
-        color: "#f3f3f3",
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -136,7 +136,7 @@ export var areaChartOptions: any = {
     }]
   },
 };
-export var areaChartColors: Array<any> = [
+export let areaChartColors: Array<any> = [
 
 
   {
@@ -165,11 +165,11 @@ export var areaChartColors: Array<any> = [
   },
 
 ];
-export var areaChartLegend = true;
-export var areaChartType = 'line';
+export let areaChartLegend = true;
+export let areaChartType = 'line';
 
-//scatter chart
-export var scatterChartData: Array<any> = [
+// scatter chart
+export let scatterChartData: Array<any> = [
 
   {
     data: [
@@ -271,8 +271,8 @@ export var scatterChartData: Array<any> = [
   }
 
 ];
-export var scatterChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-export var scatterChartOptions: any = {
+export let scatterChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+export let scatterChartOptions: any = {
   animation: {
     duration: 1000, // general animation time
     easing: 'easeOutBack'
@@ -292,8 +292,8 @@ export var scatterChartOptions: any = {
       type: 'logarithmic',
       position: 'bottom',
       gridLines: {
-        zeroLineColor: "rgba(0,0,0,.1)",
-        color: "#f3f3f3",
+        zeroLineColor: 'rgba(0,0,0,.1)',
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -305,12 +305,12 @@ export var scatterChartOptions: any = {
       type: 'linear',
       ticks: {
         userCallback: function (tick) {
-          return tick.toString() + "dB";
+          return tick.toString() + 'dB';
         }
       },
       gridLines: {
-        zeroLineColor: "rgba(81,117,224,1)",
-        color: "#f3f3f3",
+        zeroLineColor: 'rgba(81,117,224,1)',
+        color: '#f3f3f3',
         drawTicks: false,
       },
       scaleLabel: {
@@ -320,39 +320,39 @@ export var scatterChartOptions: any = {
     }]
   }
 };
-export var scatterChartColors: Array<any> = [
+export let scatterChartColors: Array<any> = [
   {
 
-    backgroundColor: "rgba(81,117,224,.6)",
-    borderColor: "transparent",
-    pointBorderColor: "#5175E0",
-    pointBackgroundColor: "#FFF",
+    backgroundColor: 'rgba(81,117,224,.6)',
+    borderColor: 'transparent',
+    pointBorderColor: '#5175E0',
+    pointBackgroundColor: '#FFF',
     pointBorderWidth: 2,
     pointHoverBorderWidth: 2,
     pointRadius: 4,
   }
 
 ];
-export var scatterChartLegend = true;
-export var scatterChartType = 'scatter';
+export let scatterChartLegend = true;
+export let scatterChartType = 'scatter';
 
 // barChart
-export var barChartOptions: any = {
+export let barChartOptions: any = {
   scaleShowVerticalLines: false,
   responsive: true,
   maintainAspectRatio: false
 
 };
-export var barChartLabels: string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-export var barChartType = 'bar';
-export var barChartLegend = true;
+export let barChartLabels: string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+export let barChartType = 'bar';
+export let barChartLegend = true;
 
-export var barChartData: any[] = [
+export let barChartData: any[] = [
   { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
   { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
 ];
 
-export var barChartColors: Array<any> = [
+export let barChartColors: Array<any> = [
 
 
   {
@@ -377,32 +377,32 @@ export var barChartColors: Array<any> = [
 ];
 
 // Doughnut
-export var doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-export var doughnutChartData: number[] = [350, 450, 100];
-export var doughnutChartColors: any[] = [{ backgroundColor: ["rgba(0, 157, 160, 0.8)", "rgba(28, 188, 216, 0.8)", "rgba(255, 141, 96, 0.8)"] }];
-export var doughnutChartType = 'doughnut';
-export var doughnutChartOptions: any = {
+export let doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
+export let doughnutChartData: number[] = [350, 450, 100];
+export let doughnutChartColors: any[] = [{ backgroundColor: ['rgba(0, 157, 160, 0.8)', 'rgba(28, 188, 216, 0.8)', 'rgba(255, 141, 96, 0.8)'] }];
+export let doughnutChartType = 'doughnut';
+export let doughnutChartOptions: any = {
   animation: false,
   responsive: true,
   maintainAspectRatio: false
 };
 // Radar
-export var radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+export let radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
 
-export var radarChartData: any = [
+export let radarChartData: any = [
   { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
   { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
 ];
-export var radarChartType = 'radar';
-export var radarChartColors: any[] = [
+export let radarChartType = 'radar';
+export let radarChartColors: any[] = [
   {
-    backgroundColor: ["rgba(255, 141, 96, 0.8)"]
+    backgroundColor: ['rgba(255, 141, 96, 0.8)']
   },
   {
-    backgroundColor: ["rgba(0, 157, 160, 0.8)"]
+    backgroundColor: ['rgba(0, 157, 160, 0.8)']
   }
 ];
-export var radarChartOptions: any = {
+export let radarChartOptions: any = {
   animation: false,
   responsive: true,
   maintainAspectRatio: false
@@ -410,25 +410,32 @@ export var radarChartOptions: any = {
 
 
 // Pie
-export var pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-export var pieChartData: number[] = [300, 500, 100];
-export var pieChartType = 'pie';
-export var pieChartColors: any[] = [{ backgroundColor: ["rgba(0, 157, 160, 0.8)", "rgba(28, 188, 216, 0.8)", "rgba(255, 141, 96, 0.8)"] }];
-export var pieChartOptions: any = {
+export let pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+export let pieChartData: number[] = [300, 500, 100];
+export let pieChartType = 'pie';
+export let pieChartColors: any[] = [{ backgroundColor: ['rgba(0, 157, 160, 0.8)', 'rgba(28, 188, 216, 0.8)', 'rgba(255, 141, 96, 0.8)'] }];
+export let pieChartOptions: any = {
   animation: false,
   responsive: true,
   maintainAspectRatio: false
 };
 
 // PolarArea
-export var polarAreaChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales'];
-export var polarAreaChartData: number[] = [300, 500, 100, 40, 120];
-export var polarAreaLegend = true;
-export var ploarChartColors: any[] = [{ backgroundColor: ["rgba(0, 157, 160, 0.8)", "rgba(28, 188, 216, 0.8)", "rgba(255, 141, 96, 0.8)", "rgba(12, 194, 126, 0.8)", "rgba(255, 88, 107, 0.8)"] }];
+export let polarAreaChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales'];
+export let polarAreaChartData: number[] = [300, 500, 100, 40, 120];
+export let polarAreaLegend = true;
+export let ploarChartColors: any[] = [{
+  backgroundColor: [
+    'rgba(0, 157, 160, 0.8)',
+    'rgba(28, 188, 216, 0.8)',
+    'rgba(255, 141, 96, 0.8)',
+    'rgba(12, 194, 126, 0.8)',
+    'rgba(255, 88, 107, 0.8)'
+  ] }];
 
 
-export var polarAreaChartType = 'polarArea';
-export var polarChartOptions: any = {
+export let polarAreaChartType = 'polarArea';
+export let polarChartOptions: any = {
   animation: false,
   responsive: true,
   maintainAspectRatio: false

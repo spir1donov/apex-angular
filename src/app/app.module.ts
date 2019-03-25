@@ -14,7 +14,7 @@ import { FullLayoutComponent } from './layouts/full/full-layout.component';
 
 import { CustomOption } from './shared/toastr/custom-option';
 
-// import * as $ from 'jquery';
+import * as $ from 'jquery';
 
 
 @NgModule({
