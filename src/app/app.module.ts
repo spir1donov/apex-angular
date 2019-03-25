@@ -4,17 +4,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from "./shared/shared.module";
+import { SharedModule } from './shared/shared.module';
 import { ToastModule, ToastOptions } from 'ng2-toastr/ng2-toastr';
 import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
-import { ContentLayoutComponent } from "./layouts/content/content-layout.component";
-import { FullLayoutComponent } from "./layouts/full/full-layout.component";
+import { ContentLayoutComponent } from './layouts/content/content-layout.component';
+import { FullLayoutComponent } from './layouts/full/full-layout.component';
 
-import { CustomOption } from "./shared/toastr/custom-option";
+import { CustomOption } from './shared/toastr/custom-option';
 
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import * as $ from 'jquery';
         })
     ],
     providers: [
-        //Toastr providers
+        // Toastr providers
         { provide: ToastOptions, useClass: CustomOption }
     ],
     bootstrap: [AppComponent]
